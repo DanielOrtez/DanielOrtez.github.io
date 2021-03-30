@@ -6,9 +6,8 @@
           target="_blank">
           <github-logo height="20px" width="20px" />
         </a>
-        <a class="tracking-tighter ml-5 cursor-pointer" @click="toggleModal">Contact Me</a>
+        <a href="mailto:daniortez882@gmail.com" class="tracking-tighter ml-5 cursor-pointer">Contact Me</a>
       </nav>
-      <form-modal @toggleModal="toggleModal" v-if="showForm" />
     </header>
     <slot/>
   </div>
@@ -16,20 +15,9 @@
 
 <script>
 import GithubLogo from '../assets/github-logo.svg'
-import FormModal from '../components/FormModal.vue'
 
 export default {
-  components: { GithubLogo, FormModal },
-  data: () => {
-    return {
-      showForm: false
-    }
-  },
-  methods: {
-    toggleModal() {
-      this.showForm = !this.showForm
-    }
-  }
+  components: { GithubLogo },
 }
 </script>
     FormModal

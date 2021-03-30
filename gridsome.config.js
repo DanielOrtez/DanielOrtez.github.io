@@ -7,6 +7,7 @@
 module.exports = {
   siteName: 'Daniel Ortez',
   siteUrl: 'https://www.danioz.me',
+  pathPrefix: '/DanielOrtez.github.io',
   description: "Daniel Ortez's personal portfolio",
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
